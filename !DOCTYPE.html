@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestra Atendimento de Ouro com Orlando Hesse em Ponta Grossa</title>
+    <meta name="description" content="Participe da palestra com Orlando Hesse em Ponta Grossa, dia 15 de setembro no Hotel Pax. Aprenda a transformar atendimento em vendas e fidelizar clientes.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '[SEU_FACEBOOK_PIXEL_ID_AQUI]'); /* <-- COLE SEU PIXEL ID AQUI */
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=[SEU_FACEBOOK_PIXEL_ID_AQUI]&ev=PageView&noscript=1" /* <-- COLE SEU PIXEL ID AQUI */
+    /></noscript>
+    <style>
+        /* --- Reset Básico e Configurações Globais --- */
+        :root {
+            --cor-primaria: #1A2E40; /* Azul Escuro */
+            --cor-secundaria: #3D5A80; /* Azul Médio */
+            --cor-destaque: #F2A900; /* Laranja/Amarelo Vibrante para CTA */
+            --cor-fundo: #F8F9FA; /* Cinza Muito Claro */
+            --cor-texto: #333333; /* Cinza Escuro */
+            --cor-branca: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+        }
+
+        /* --- Estrutura e Layout --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        section:nth-child(even) {
+            background-color: var(--cor-branca);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--cor-primaria);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+            color: var(--cor-secundaria);
+        }
+
+        /* --- Botão CTA Principal --- */
+        .cta-button {
+            display: inline-block;
+            background-color: var(--cor-destaque);
+            color: var(--cor-primaria);
+            padding: 18px 40px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* --- 1. Dobra Principal (Hero Section) --- */
+        #hero {
+            background: linear-gradient(rgba(26, 46, 64, 0.85), rgba(26, 46, 64, 0.85)), url('https://images.unsplash.com/photo-1556742502-ec7c0e9f34b1?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+            color: var(--cor-branca);
+            padding: 100px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 90vh;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-subtext {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            font-weight: 600;
+        }
+
+        .hero-image {
+            width: 300px; /* Ajuste o tamanho da imagem */
+            height: 300px; /* Ajuste o tamanho da imagem */
+            border-radius: 50%; /* Para que a imagem fique redonda */
+            object-fit: cover;
+            margin: 40px auto; /* Centraliza a imagem e adiciona margem */
+            border: 5px solid var(--cor-destaque); /* Borda destacada */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- 2. Seção Problema --- */
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            text-align: left;
+            margin-top: 50px;
+        }
+
+        .problem-card {
+            background: var(--cor-branca);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .problem-card i {
+            font-size: 2rem;
+            color: var(--cor-destaque);
+            margin-top: 5px;
+        }
+
+        .problem-card h3 {
+            font-size: 1.2rem;
+            color: var(--cor-primaria);
+            margin-bottom: 5px;
+        }
+
+        /* --- 3. Seção Solução --- */
+        #solucao {
+            background-color: var(--cor-secundaria);
+            color: var(--cor-branca);
+        }
+        
+        #solucao .section-title, #solucao .section-subtitle {
+            color: var(--cor-branca);
+        }
+        
+        .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .solution-card {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .solution-card i {
+            font-size: 1.5rem;
+            color: var(--cor-destaque);
+            margin-top: 8px;
+        }
+
+        .solution-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        /* --- 4. Mentor --- */
+        .mentor-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            text-align: left;
+        }
+
+        .mentor-photo {
+            flex-shrink: 0;
+        }
+
+        .mentor-photo img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .mentor-bio h2 {
+            font-size: 2.2rem;
+            color: var(--cor-primaria);
+            margin-bottom: 15px;
+        }
+
+        /* --- 5. Detalhes do Evento --- */
+        .event-details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .detail-card {
+            background: var(--cor-branca);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .detail-card i {
+            font-size: 3rem;
+            color: var(--cor-destaque);
+            margin-bottom: 15px;
+        }
+
+        .detail-card h3 {
+            font-size: 1.5rem;
+            color: var(--cor-primaria);
+        }
+
+        .detail-card p {
+            font-size: 1.1rem;
+            color: var(--cor-secundaria);
+        }
+
+        /* --- 6. Ingressos --- */
+        #ingressos {
+            background-color: var(--cor-primaria);
+        }
+
+        #ingressos .section-title, #ingressos .section-subtitle {
+             color: var(--cor-branca);
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            margin: 50px auto 0 auto;
+        }
+        
+        .pricing-card {
+            background-color: var(--cor-branca);
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .pricing-card.popular {
+            transform: scale(1.05);
+            border: 3px solid var(--cor-destaque);
+        }
+        
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            color: var(--cor-primaria);
+        }
+        
+        .pricing-card .price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--cor-primaria);
+            margin: 15px 0;
+        }
+        
+        .pricing-card .price span {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        
+        .pricing-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 20px 0 30px 0;
+            padding-left: 20px;
+        }
+        
+        .pricing-card ul li {
+            margin-bottom: 10px;
+        }
+        
+        .pricing-card ul li i {
+            color: var(--cor-destaque);
+            margin-right: 10px;
+        }
+        
+        .pricing-card .cta-button {
+            max-width: 100%;
+        }
+
+        /* --- Footer --- */
+        footer#main-footer {
+            background-color: var(--cor-primaria);
+            color: var(--cor-branca);
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid var(--cor-secundaria);
+        }
+
+        .social-links a {
+            color: var(--cor-branca);
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: var(--cor-destaque);
+        }
+
+        /* --- Responsividade --- */
+        @media (max-width: 992px) {
+            .mentor-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .testimonials {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .section-title, .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            .problem-grid, .solution-grid, .pricing-grid {
+                 grid-template-columns: 1fr;
+            }
+             .pricing-card.popular {
+                transform: scale(1);
+            }
+            .hero-image {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="http://googleusercontent.com/file_content/0" alt="Orlando Hesse" class="hero-image">
+                <h1>Transforme Atendimento em Vendas: A Palestra que vai Revolucionar seu Negócio em Ponta Grossa.</h1>
+                <p>Dia 15 de Setembro, no Hotel Pax. Aprenda com Orlando Hesse as estratégias e cuidados para encantar clientes e multiplicar seu faturamento.</p>
+                <a href="https://pay.hotmart.com/B101395532E" target="_blank" class="cta-button">GARANTIR MEU INGRESSO AGORA</a>
+                <p class="hero-subtext">Vagas limitadas! Garanta a sua antes que esgote.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="problema">
+            <div class="container">
+                <h2 class="section-title">Seu negócio em Ponta Grossa perde vendas por detalhes no atendimento?</h2>
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <i class="fa-solid fa-person-walking-arrow-right"></i>
+                        <div>
+                            <h3>Clientes saem sem comprar?</h3>
+                            <p>Você vê pessoas entrando no seu estabelecimento, mas a conversão em vendas é baixa.</p>
+                        </div>
+                    </div>
+                    <div class="problem-card">
+                        <i class="fa-solid fa-comments-dollar"></i>
+                        <div>
+                            <h3>Equipe sem argumentos?</h3>
+                            <p>Seus funcionários não sabem como reverter objeções e agregar valor na venda.</p>
+                        </div>
+                    </div>
+                    <div class="problem-card">
+                        <i class="fa-solid fa-face-frown"></i>
+                        <div>
+                            <h3>Reclamações são comuns?</h3>
+                            <p>Feedbacks negativos sobre o atendimento se tornaram uma preocupação constante.</p>
+                        </div>
+                    </div>
+                    <div class="problem-card">
+                        <i class="fa-solid fa-money-bill-trend-up"></i>
+                        <div>
+                            <h3>Faturamento estagnado?</h3>
+                             <p>Você sente que poderia faturar muito mais com os mesmos clientes que já possui.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="solucao">
+            <div class="container">
+                <h2 class="section-title">O Que Você Vai Aprender na Palestra</h2>
+                <p class="section-subtitle">Domine as técnicas que os negócios de sucesso em Ponta Grossa usam para fidelizar clientes e vender mais.</p>
+                <div class="solution-grid">
+                    <div class="solution-card">
+                        <i class="fa-solid fa-handshake"></i>
+                        <div>
+                            <h3>Abordagem que Conecta</h3>
+                            <p>Técnicas para quebrar o gelo, criar uma primeira impressão memorável e gerar confiança imediata.</p>
+                        </div>
+                    </div>
+                    <div class="solution-card">
+                        <i class="fa-solid fa-recycle"></i>
+                        <div>
+                            <h3>Reversão de Reclamações</h3>
+                            <p>Como transformar um cliente insatisfeito em um fã da sua marca, usando a queixa como oportunidade.</p>
+                        </div>
+                    </div>
+                    <div class="solution-card">
+                        <i class="fa-solid fa-arrow-up-right-dots"></i>
+                        <div>
+                            <h3>Aumento do Ticket Médio</h3>
+                            <p>Estratégias simples e eficazes para fazer cada cliente gastar mais em cada compra, de forma natural.</p>
+                        </div>
+                    </div>
+                    <div class="solution-card">
+                        <i class="fa-solid fa-ear-listen"></i>
+                        <div>
+                            <h3>A Arte de Ouvir</h3>
+                            <p>Como fazer as perguntas certas para descobrir a real necessidade do cliente e oferecer a solução perfeita.</p>
+                        </div>
+                    </div>
+                     <div class="solution-card">
+                        <i class="fa-solid fa-people-group"></i>
+                        <div>
+                            <h3>Cultura de Excelência</h3>
+                            <p>Passos práticos para motivar e treinar toda a sua equipe a ter o atendimento ao cliente como prioridade número um.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mentor">
+            <div class="container">
+                <div class="mentor-content">
+                    <div class="mentor-photo">
+                        <img src="http://googleusercontent.com/file_content/0" alt="Foto profissional de Orlando Hesse">
+                    </div>
+                    <div class="mentor-bio">
+                        <h2>Orlando Hesse: O Especialista que vai Treinar seu Time.</h2>
+                        <p>Com mais de <strong>25 anos de experiência</strong> em motivação e atendimento ao cliente, Orlando Hesse já transformou a realidade de centenas de empresas. Ele é reconhecido por sua metodologia prática e enérgica, que não apenas ensina, mas inspira equipes a aplicarem o conhecimento no dia a dia.</p>
+                        <p>Nesta palestra única em Ponta Grossa, ele irá condensar décadas de aprendizado em estratégias acionáveis, criadas para gerar resultados imediatos no seu faturamento e na satisfação dos seus clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="detalhes-evento">
+            <div class="container">
+                <h2 class="section-title">Informações do Evento</h2>
+                <div class="event-details-grid">
+                    <div class="detail-card">
+                        <i class="fa-solid fa-calendar-day"></i>
+                        <h3>Data</h3>
+                        <p>15 de Setembro de 2025</p>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fa-solid fa-clock"></i>
+                        <h3>Horário</h3>
+                        <p>19h às 22h (Credenciamento às 18:30)</p>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fa-solid fa-map-marker-alt"></i>
+                        <h3>Local</h3>
+                        <p>Hotel Pax, Ponta Grossa - PR</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ingressos">
+            <div class="container">
+                <h2 class="section-title">Garanta Sua Vaga</h2>
+                <p class="section-subtitle">Escolha o ingresso ideal para você e sua equipe. Invista no conhecimento que gera retorno real.</p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Ingresso Individual</h3>
+                        <div class="price">R$ 197</div>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> 1 Acesso à palestra completa</li>
+                            <li><i class="fa-solid fa-check"></i> Material de apoio digital</li>
+                            <li><i class="fa-solid fa-check"></i> Certificado de participação</li>
+                        </ul>
+                        <a href="https://pay.hotmart.com/B101395532E" target="_blank" class="cta-button">Comprar Ingresso</a>
+                    </div>
+                    <div class="pricing-card popular">
+                        <h3>Combo Equipe (3 Pessoas)</h3>
+                        <div class="price">R$ 497 <span>(R$ 165 por pessoa)</span></div>
+                         <ul>
+                            <li><i class="fa-solid fa-check"></i> 3 Acessos à palestra completa</li>
+                            <li><i class="fa-solid fa-check"></i> Material de apoio digital</li>
+                            <li><i class="fa-solid fa-check"></i> Certificado de participação</li>
+                            <li><i class="fa-solid fa-check"></i> Bônus: E-book exclusivo</li>
+                        </ul>
+                        <a href="https://pay.hotmart.com/B101395532E" target="_blank" class="cta-button">Levar Minha Equipe</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        </main>
+
+    <footer id="main-footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2025 Orlando Hesse - Palestras e Treinamentos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
